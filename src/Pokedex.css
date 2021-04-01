@@ -1,6 +1,14 @@
 .Pokedex {
-    display: flex;
+    display : flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     
+}
+.Pokedex-data {
+    margin: 10px;
+}
+.result_winner {
+    color : green;
+}
+.result_loser {
+    color : red;
 }

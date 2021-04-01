@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
-import "./Pokecard.css";
+import "./Pokecard.css"
 
-const imgg = "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/";
-
-let padToThree = (number) => (number <= 999 ? `00${number}`.slice(-3): number);
+const img_src = "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/";
+let skoli = (number) => (number <= 999 ? `00${number}`.slice(-3): number);
 class Pokecard extends Component {
-    render() {
+    render () {
         const props = this.props;
-        let src_img = `${imgg}${padToThree(props.id)}.png`
-        return (
-            <div className="Pokecard">
-                <h1 className="Pokecard-title">{props.name}</h1>
-                <img src ={src_img}/>
-                <div className="Pokecard-data">Type : {props.type}</div>
-                <div className="Pokecard-data">Exp : {props.exp}</div>
+        let real_src = `${img_src}${skoli(props.id)}.png`;
+        return(
+            <div className = "Pokecard">
+                <h1>{props.name}</h1>
+                <div className="Pokecard_image">
+                <img src = {real_src}/>
+                </div>
+                <div className="Pokecard_data">Type : {props.type}</div>
+                <div className="Pokecard_data">EXP : {props.exp}</div>
             </div>
         )
     }

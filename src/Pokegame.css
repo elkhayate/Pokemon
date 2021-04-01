@@ -1,20 +1,3 @@
-.winner-top {
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 7px 10px 12px -5px black;
-    border-radius: 1rem;
-    background-color: #9ede73;
-}
-.Pokegame-first {
-    background-color: #9ede73;
-}
-.Pokegame-second {
-    background-color: #eeb76b;
-}
-.winner-bottom {
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 7px 10px 12px -5px black;
-    border-radius: 1rem;
-    background-color: #eeb76b;
+.Pokegame {
+    justify-content: space-around;
 }
